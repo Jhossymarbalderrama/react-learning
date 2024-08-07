@@ -40,3 +40,24 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.container{
+  display: flex;
+  align-items: baseline;
+}
+
+.container div{
+  font-size: 50px;
+}
+
+.container p{
+  font-size: 20px;
+  padding: 0 30px;
+}
+
+.box{
+  border: solid 1px #000;
+  padding: 30px;
+  background-color: sandybrown;
+}

@@ -1,11 +1,22 @@
 import './App.css'
-import ContadorClase from './components/ContadorClase'
+import ComponenteA from './components/ComponenteA'
+import ComponenteB from './components/ComponenteB'
 
 function App() {
+
+  const miEmoji = "🛩️"
+  const miBoton = "Buscar Destino"
   return (
     <>
-    
-      <ContadorClase/>
+      <div className='box'>
+        <ComponenteA
+          emoji={miEmoji}
+          titulo="Viajes Aventura"
+        />
+        <ComponenteB
+          textoBtn={miBoton}
+        />
+      </div>
     </>
   )
 }

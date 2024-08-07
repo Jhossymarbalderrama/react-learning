@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const MiFormulario = () => {
 
+    const [formData, setFormData] = useState({
+        username: '',
+        email:'ejemplo@ejemplo.com',
+        password: '',
+    });
+    
     const activarPorEvento = (evento) => {
         console.log("Evento Activado", evento.type)
     }
@@ -17,18 +23,18 @@ const MiFormulario = () => {
 
     return (
         <div className="box">
-            <form autoComplete="off" onClick={formularioActivado}  >
+            <form autoComplete="off">
                 <div>
-                    <label htmlFor="username" onMouseOver={activarPorEvento}>Usuario:</label>
-                    <input type="text" id="username" name="username" onClick={inputActivado}/>
+                    <label htmlFor="username">Usuario:</label>
+                    <input type="text" id="username" name="username" value={formData.username}/>
                 </div>
                 <div>
                     <label htmlFor="email">Email:</label>
-                    <input type="mail" id="email" name="email" onChange={activarPorEvento}/>
+                    <input type="mail" id="email" name="email" value={formData.email}/>
                 </div>
                 <div>
-                    <label htmlFor="password" onClick={activarPorEvento}>Password:</label>
-                    <input type="password" id="password" name="password" />
+                    <label htmlFor="password">Password:</label>
+                    <input type="password" id="password" name="password" value={formData.password}/>
                 </div>
 
                 <button type="submit">Enviar</button>

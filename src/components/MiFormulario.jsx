@@ -6,12 +6,21 @@ const MiFormulario = () => {
         console.log("Evento Activado", evento.type)
     }
 
+    const inputActivado = (evento) => {
+        evento.stopPropagation()
+        console.log("Input Activado", evento.type)
+    }
+
+    const formularioActivado = (evento) => {
+        console.log("Formulario Activado", evento.type)
+    }
+
     return (
         <div className="box">
-            <form autoComplete="off">
+            <form autoComplete="off" onClick={formularioActivado}  >
                 <div>
                     <label htmlFor="username" onMouseOver={activarPorEvento}>Usuario:</label>
-                    <input type="text" id="username" name="username" />
+                    <input type="text" id="username" name="username" onClick={inputActivado}/>
                 </div>
                 <div>
                     <label htmlFor="email">Email:</label>

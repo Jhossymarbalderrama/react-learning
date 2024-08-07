@@ -67,3 +67,17 @@ button{
   background-color: purple !important;
   margin: 10px 0px;
 }
+
+form .error{
+  color: #a72c2c;
+  font-size: small;
+  display: block;
+  text-align: right;
+  padding-right: 12px;
+}
+
+
+
+form div{
+  width: 100%;
+}

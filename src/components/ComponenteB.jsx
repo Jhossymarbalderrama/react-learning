@@ -2,9 +2,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
-const ComponenteB = ({textoBtn}) => {
+const ComponenteB = ({textoBtn, onClick}) => {
+
     return (
-        <button>{textoBtn}</button>
+        <button onClick={onClick}>{textoBtn}</button>
     )
 }
 

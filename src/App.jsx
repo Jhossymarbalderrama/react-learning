@@ -6,6 +6,11 @@ function App() {
 
   const miEmoji = "🛩️"
   const miBoton = "Buscar Destino"
+
+  const manejarClick = () => {
+    alert("Click desde el componente Padre")
+  }
+
   return (
     <>
       <div className='box'>
@@ -14,6 +19,7 @@ function App() {
           titulo="Viajes Aventura"
         />
         <ComponenteB
+          onClick = {manejarClick}
           textoBtn={miBoton}
         />
       </div>

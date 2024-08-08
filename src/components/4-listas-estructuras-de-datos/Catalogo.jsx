@@ -27,11 +27,18 @@ const Catalogo = () => {
         <>
             <h2>Catálogo de Productos</h2>
 
-            <ul>
-                {productos.map(pd => (
-                    <li key={pd.id}><b>{pd.nombre}</b> - ${pd.precio}</li>
-                ))}
-            </ul>
+            {/* Bloque Condicional por si la lista esta vacia */}
+            {productos.length === 0 ? (
+                <p>No hay productos disponibles en el catálogo.</p>
+            ) : (
+                <ul>
+                    {productos.map(pd => (
+                        <li key={pd.id}><b>{pd.nombre}</b> - ${pd.precio}</li>
+                    ))}
+                </ul>
+            )}
+
+
         </>
     );
 };

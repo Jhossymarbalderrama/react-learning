@@ -12,8 +12,8 @@ function App() {
         {/* Componende Provider - Padre */}
         <DataProvider>
           {/* Componentes Hijos */}
-          <ListaCarrito/> 
           <ListaProductos/>
+          <ListaCarrito/> 
         </DataProvider>
 
       </div>

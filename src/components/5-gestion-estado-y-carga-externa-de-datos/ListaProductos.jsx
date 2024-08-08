@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { DataContext } from "./DataContext";
 
-function ListaProductos (){
-    const {data, setData} = useContext(DataContext)
-    
-    const manejarClick = (event)=>{
+function ListaProductos() {
+    const { data, setData } = useContext(DataContext)
+
+    const manejarClick = (event) => {
         const id = event.id;
         setData(prevData => prevData.map(item =>
             item.id === id ? { ...item, status: 'selected' } : item
@@ -23,8 +23,8 @@ function ListaProductos (){
                             <div className="card-body">
                                 <h5 className="card-title">{producto.nombre}</h5>
                                 <p className="card-text">${producto.precio}</p>
-                                <button href="#" className="btn btn-primary" 
-                                onClick={()=>{ manejarClick(producto) }}
+                                <button href="#" className="btn btn-primary"
+                                    onClick={() => { manejarClick(producto) }}
                                 >Comprar</button>
                             </div>
                         </div>

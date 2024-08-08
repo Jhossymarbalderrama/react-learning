@@ -29,7 +29,7 @@ const Catalogo = () => {
 
             <ul>
                 {productos.map(pd => (
-                    <li><b>{pd.nombre}</b> - ${pd.precio}</li>
+                    <li key={pd.id}><b>{pd.nombre}</b> - ${pd.precio}</li>
                 ))}
             </ul>
         </>

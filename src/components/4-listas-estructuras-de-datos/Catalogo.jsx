@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 const Catalogo = () => {
 
@@ -30,15 +30,14 @@ const Catalogo = () => {
             {/* Bloque Condicional por si la lista esta vacia */}
             {productos.length === 0 ? (
                 <p>No hay productos disponibles en el catálogo.</p>
-            ) : (
+            ): (
                 <ul>
-                    {productos.map(pd => (
-                        <li key={pd.id}><b>{pd.nombre}</b> - ${pd.precio}</li>
-                    ))}
-                </ul>
+                {productos.map(pd => (
+                    <li key={pd.id}><b>{pd.nombre}</b> - ${pd.precio}</li>
+                ))}
+            </ul>
             )}
-
-
+          
         </>
     );
 };

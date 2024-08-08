@@ -1,12 +1,14 @@
 
 import './App.css'
-import MiFormulario from './components/MiFormulario'
+import Catalogo from './components/4-listas-estructuras-de-datos/Catalogo'
 
 function App() {
 
+ 
+
   return (
     <>
-      <MiFormulario/>
+      <Catalogo/>
     </>
   )
 }

@@ -28,7 +28,8 @@ const Home = () => {
                             className="list-group-item list-group-item-action"
                         >
                             {producto.nombre}
-                        </Link>
+                        </Link> 
+                        
                     )
                 )}
             </ul>

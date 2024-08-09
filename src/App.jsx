@@ -1,22 +1,11 @@
 
 import './App.css'
-import ListaProductos from './components/5-gestion-estado-y-carga-externa-de-datos/ListaProductos'
-import ListaCarrito from './components/5-gestion-estado-y-carga-externa-de-datos/ListaCarrito'
-import { useEffect, useState } from 'react'
-import { DataProvider } from './components/5-gestion-estado-y-carga-externa-de-datos/DataContext'
+import Catalogo from './components/6-import-CSS-dentro-de-componentes-React/Catalogo/Catalogo'
 
 function App() {
   return (
     <>
-      <div className="row">
-        {/* Componende Provider - Padre */}
-        <DataProvider>
-          {/* Componentes Hijos */}
-          <ListaProductos/>
-          <ListaCarrito/> 
-        </DataProvider>
-
-      </div>
+      <Catalogo/>    
     </>
   )
 }

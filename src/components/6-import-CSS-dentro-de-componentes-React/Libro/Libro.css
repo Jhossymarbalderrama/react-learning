@@ -1,5 +1,5 @@
 *{
-    color: black;
+    
 }
 
 .item {
@@ -25,4 +25,13 @@
     font-size: 13px;
     flex: 1;
     align-items: flex-end;
+}
+
+.default.card{
+    background-color: #757575;
+    color: white;
+}
+
+.seleccionado.card{
+    background-color: #454545;
 }

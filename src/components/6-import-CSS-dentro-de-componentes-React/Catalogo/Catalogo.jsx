@@ -17,7 +17,13 @@ const Catalogo = () => {
     return (
         <>
 
-            <div className='row'>
+            <div style={
+                {
+                    display: 'flex',                     
+                    flexWrap: 'wrap',
+                    backgroundColor: '#464646'
+                }
+            }>
                 {libros.map(
                     (libro) => (   
                        <Libro key={libro.id} libro={libro} />

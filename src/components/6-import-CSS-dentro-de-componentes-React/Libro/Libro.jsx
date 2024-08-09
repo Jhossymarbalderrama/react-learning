@@ -5,7 +5,7 @@ const Libro = ({libro}) => {
 
     return (
         <>
-            <div>
+            <div className="item">
                 <h2>{libro.titulo}</h2>
                 <span>Publicado en {libro.publicado}</span>
             </div>
